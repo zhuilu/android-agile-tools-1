@@ -51,7 +51,7 @@ The project is build for the android platform.
 
 Development environment is Eclipse IDE combined with Maven. If someone wants to choose another IDE, it should be easily to do. Therefore unnecassary eclipse specific files should *not* be checked in. A suitable *.gitignore* will be set.
 
-### Continous Integration
+### Continuous Integration
 
 The project will be build automatically on a Jenkins platform at [Cloudbees](https://www.cloudbees.com/) on a regular basis.
 
