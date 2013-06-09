@@ -15,13 +15,13 @@ My name is Julian Wiersbitzki and I am working in Hamburg at [Holisticon](http:/
 This software is released under [THE BEER-WARE LICENSE (Revision 42)](http://en.wikipedia.org/w/index.php?title=Beerware&oldid=558181740):
 
     /*
-     * ----------------------------------------------------------------------------
+     * -------------------------------------------------------------------------------
      * "THE BEER-WARE LICENSE" (Revision 42):
      * <julian@wiersbitzki.com> wrote this file. As long as you retain this notice you
      * can do whatever you want with this stuff. If we meet some day, and you think
      * this stuff is worth it, you can buy me a beer in return.
-     * Julian Wiersbitzki
-     * ----------------------------------------------------------------------------
+     * Julian Wiersbitzki, @julianwki
+     * -------------------------------------------------------------------------------
      */
 
 ## Scope
@@ -32,11 +32,12 @@ A small app for Android phones (and probably tablets) which contains little help
 
 A tool in which you can choose your card for planning poker. It should be configurable for scales, eg.:
 
-* Fibonacci-style (0, 1, 2, 3, 5, 8,...) 
+* Fibonacci-style (0, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89) 
 * Scale-100 (0, ½, 1, 2, 3, 5, 8, 13, 20, 40, 100)
 * T-Shirt-Sizes (XS, S, M, L, XL, XXL)
-* perhaps you can also configure your own scale
 * optional: coffee break, question mark
+* optional: configure your own scale
+
 
 ### Timebox Stop Watch
 
