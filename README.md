@@ -8,7 +8,7 @@ This is my very first android-project and also my first project on github. I wan
 
 ### Me
 
-My name is Julian Wiersbitzki and I am working in Hamburg at [Holisticon](http://www.holisticon.de). This is my own private project, if you have any questions do not hesitate to ask.
+My name is Julian Wiersbitzki and I am working in Hamburg at [Holisticon](http://www.holisticon.de). This is my own private project, if you have any questions do not hesitate to ask me here or at [@julianwki](http://twitter.com/julianwki).
 
 ### License
 
@@ -40,7 +40,7 @@ A tool in which you can choose your card for planning poker. It should be config
 
 ### Timebox Stop Watch
 
-A tool in which you can choose a timebox amount which is counted backward (*a.k.a.s.* stop watch). It should be configurable for different meetings so you can choose rapidly and start.
+A tool in which you can choose a timebox amount which is counted backward (*akas* stop watch). It should be configurable for different meetings so you can choose rapidly and start.
 
 ## Development
 
