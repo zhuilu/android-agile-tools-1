@@ -11,6 +11,7 @@
 	<properties>
 		<platform.version>4.0.3</platform.version>
 		<sdk.api>15</sdk.api>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
 	<dependencies>
