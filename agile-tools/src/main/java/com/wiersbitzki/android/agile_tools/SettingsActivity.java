@@ -16,8 +16,7 @@ public class SettingsActivity extends Activity {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 		}
 		// add settings fragment
-		getFragmentManager().beginTransaction()
-				.replace(android.R.id.content, new SettingsFragment()).commit();
+		getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
 	}
 
 	@Override
