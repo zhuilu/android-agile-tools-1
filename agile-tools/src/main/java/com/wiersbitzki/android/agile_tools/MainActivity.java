@@ -1,7 +1,10 @@
 package com.wiersbitzki.android.agile_tools;
 
+import java.io.IOException;
+
 import android.app.Activity;
 import android.content.Intent;
+import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
@@ -28,8 +31,7 @@ public class MainActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.action_settings:
-			Log.d(MainActivity.class.getSimpleName(), getResources()
-					.getResourceName(R.id.action_settings) + " pressed");
+			Log.d(MainActivity.class.getSimpleName(), getResources().getResourceName(R.id.action_settings) + " pressed");
 			Intent intent = new Intent(this, SettingsActivity.class);
 			startActivity(intent);
 			return true;
@@ -40,15 +42,13 @@ public class MainActivity extends Activity {
 	}
 
 	public void openPlanningPoker(View view) {
-		Log.d(MainActivity.class.getSimpleName(), getResources()
-				.getResourceName(R.id.buttonPlanningPoker) + " pressed");
-		// Intent intent = new Intent(this, PlanningPokerActivity.class);
-		// startActivity(intent);
+		Log.d(MainActivity.class.getSimpleName(), getResources().getResourceName(R.id.buttonPlanningPoker) + " pressed");
+		Intent intent = new Intent(this, PlanningPokerActivity.class);
+		startActivity(intent);
 	}
 
 	public void openTimeboxStopWatch(View view) {
-		Log.d(MainActivity.class.getSimpleName(), getResources()
-				.getResourceName(R.id.buttonTimeboxStopWatch) + " pressed");
+		Log.d(MainActivity.class.getSimpleName(), getResources().getResourceName(R.id.buttonTimeboxStopWatch) + " pressed");
 		// Intent intent = new Intent(this, TimeboxStopWatchActivity.class);
 		// startActivity(intent);
 	}
