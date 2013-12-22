@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="pref_exampleCheckBox"
+        android:title="@string/pref_exampleCheckBox"
+        android:summary="@string/pref_exampleCheckBox_summ"
+        android:defaultValue="true" />
+    <ListPreference
+        android:dependency="pref_exampleCheckBox"
+        android:key="pref_exampleList"
+        android:title="@string/pref_exampleList"
+        android:dialogTitle="@string/pref_exampleListDialog"
+        android:entries="@array/pref_exampleList_entries"
+        android:entryValues="@array/pref_exampleList_values"
+        android:defaultValue="@string/pref_exampleList_default" />
+</PreferenceScreen>

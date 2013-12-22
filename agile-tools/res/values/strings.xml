@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello agile-tools!</string>
-    <string name="app_name">agile-tools</string>
+
+    <string name="app_name">Agile Tools</string>
+
+    <!-- main activity -->
+    <string name="title_mainActivity">Agile Tools</string>
+    <string name="button_planningPoker">Planning Poker</string>
+    <string name="button_timeBoxStopWatch">Timebox Stop Watch</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- preferences activity-->
+    <string name="title_settingsActivity">Settings</string>
+    <string name="pref_exampleCheckBox">Example Checkbox</string>
+    <string name="pref_exampleCheckBox_summ">This is just an example checkbox</string>
+    <string name="pref_exampleList">Example List</string>
+    <string name="pref_exampleListDialog">This is just an example list</string>
+    <string-array name="pref_exampleList_entries">
+        <item>entry 1</item>
+        <item>entry 2</item>
+        <item>entry 3</item>
+        <item>entry 4</item>
+    </string-array>
+    <string-array name="pref_exampleList_values">
+        <item>value 1</item>
+        <item>value 2</item>
+        <item>value 3</item>
+        <item>value 4</item>
+    </string-array>
+    <string name="pref_exampleList_default">value 1</string>
+    
+    
 </resources>
