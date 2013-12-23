@@ -15,7 +15,6 @@ public class SettingsActivity extends Activity {
 		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
 			getActionBar().setDisplayHomeAsUpEnabled(true);
 		}
-		// add settings fragment
 		getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
 	}
 
@@ -23,7 +22,7 @@ public class SettingsActivity extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case android.R.id.home:
-			Log.d(SettingsActivity.class.getSimpleName(), "home pressed");
+			Log.d(SettingsActivity.class.getSimpleName(), getResources().getResourceName(android.R.id.home) + " pressed");
 			NavUtils.navigateUpFromSameTask(this);
 			return true;
 		default:
