@@ -54,7 +54,3 @@ Development environment is Eclipse IDE combined with Maven. If someone wants to 
 ### Continuous Integration
 
 The project will be build automatically on a Jenkins platform at [Cloudbees](https://www.cloudbees.com/) on a regular basis.
-
-### Project Management
-
-The project is managed at [yodiz](http://app.yodiz.com/home/pages/team-pulse.vz?cid=5380&pid=2), an online scrum management tool.
