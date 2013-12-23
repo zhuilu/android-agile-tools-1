@@ -11,25 +11,18 @@
 
     <!-- preferences activity-->
     <string name="title_settingsActivity">Settings</string>
-    <string name="pref_exampleCheckBox">Example Checkbox</string>
-    <string name="pref_exampleCheckBox_summ">This is just an example checkbox</string>
-    <string name="pref_exampleList">Example List</string>
-    <string name="pref_exampleListDialog">This is just an example list</string>
-    <string-array name="pref_exampleList_entries">
-        <item>entry 1</item>
-        <item>entry 2</item>
-        <item>entry 3</item>
-        <item>entry 4</item>
+    <string name="pref_planningpokerCardset">Planning Poker Cardset</string>
+    <string name="pref_planningpokerCardsetDialog">Choose cardset &#8230;</string>
+    <string-array name="pref_planningpokerCardset_entries">
+        <item>Denilson Figueiredo de Sá (white)</item>
+        <item>Denilson Figueiredo de Sá (beige)</item>
+        <item>Joenio Costa</item>
+        </string-array>
+    <string-array name="pref_planningpokerCardset_values">
+        <item>denilsonsa_white</item>
+        <item>denilsonsa_beige</item>
+        <item>joeniocosta</item>
     </string-array>
-    <string-array name="pref_exampleList_values">
-        <item>value 1</item>
-        <item>value 2</item>
-        <item>value 3</item>
-        <item>value 4</item>
-    </string-array>
-    <string name="pref_exampleList_default">value 1</string>
-    
-    <!-- test -->
-    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+    <string name="pref_planningpokerCardset_default">Denilson Figueiredo de Sá (white)</string>
     
 </resources>

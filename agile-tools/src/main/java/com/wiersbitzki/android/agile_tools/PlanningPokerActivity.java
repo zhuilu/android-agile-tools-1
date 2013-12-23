@@ -3,15 +3,16 @@ package com.wiersbitzki.android.agile_tools;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
@@ -21,7 +22,6 @@ import android.widget.ImageView;
 
 public class PlanningPokerActivity extends Activity {
 
-	private static String DIRECTORY = "planningpoker/beige";
 	private List<String> files;
 
 	@Override
@@ -29,13 +29,18 @@ public class PlanningPokerActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.planning_poker);
 
+		SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(PlanningPokerActivity.this);
+		String cardset = "planningpoker/" + settings.getString("pref_planningpokerCardset", "");
 		try {
-			files = Arrays.asList(getAssets().list(DIRECTORY));
-			Log.d(PlanningPokerActivity.class.getSimpleName(), "found " + files.size() + " files");
+			files = new LinkedList<String>();
+			String[] list = getAssets().list(cardset);
+			for (String file : list) {
+				files.add(cardset + "/" + file);
+			}
 			Collections.sort(files);
+			Log.d(PlanningPokerActivity.class.getSimpleName(), "found " + files.size() + " files");
 		} catch (IOException e) {
 			e.printStackTrace();
-			files = new LinkedList<String>();
 		}
 		ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
 		ImagePagerAdapter adapter = new ImagePagerAdapter();
@@ -50,7 +55,7 @@ public class PlanningPokerActivity extends Activity {
 			InputStream in;
 			for (String file : files) {
 				try {
-					in = getAssets().open(DIRECTORY + "/" + file);
+					in = getAssets().open(file);
 					pokercards.add(Drawable.createFromStream(in, null));
 				} catch (IOException e) {
 					e.printStackTrace();
